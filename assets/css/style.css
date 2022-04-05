@@ -100,8 +100,8 @@ li {
 /*for wrapper*/
 .wrapper {
   width: 52%; 
-  margin:  auto;
-  padding: 100px 0;
+  margin: 0 auto;
+ 
 }
 /*=================================
   Header styling starts here
@@ -117,6 +117,7 @@ li {
   justify-content: center;
   align-items: center;
   position: fixed;  
+  z-index: 2;
   background-color: #f17979;
 }
 
@@ -128,14 +129,8 @@ li {
   text-indent: -15px;
 }
 
-.hide-btn {
-  transform: translateY(-100px);
-  transition: transform 1s ease-in-out;
-}
-
 .close-btn { display: none; }
 
-/* .open-btn { display: none; } */
 
 .btn::after {
   font-family: "FontAwesome";
@@ -149,7 +144,7 @@ li {
 
 
 .nav-section {
-  display: none;
+  display: flex;
   align-items: flex-end;
   position: fixed;
   bottom: 0;
@@ -172,6 +167,7 @@ li {
 
 .nav-items {
   transform: translateX(0);
+  transition-delay: 1s;
   transition: transform 1s ease;
 }
 
@@ -208,6 +204,18 @@ li {
   main styling starts here
 =================================*/
 
+body { 
+  overflow: hidden;
+}
+
+.article {
+  padding: 100px 0  ;
+  position: relative;
+  background-color: #fff;
+  overflow: hidden;
+  transform-origin: top left;
+  transition: transform 1s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+}
 
 .article-title {
   font-size: 32px;
@@ -235,10 +243,7 @@ li {
   font-weight: 600;
 }
 
-.rotate-content {
-  transform: rotate(45deg);
-  transition: transform 1s ease;
-}
+.rotate-content { transform: rotate(-20deg); }
 
 
 /*=================================
