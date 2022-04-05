@@ -1,10 +1,10 @@
 <!doctype html>
 <!-- If multi-language site, reconsider usage of html lang declaration here. -->
-<html lang="en"> 
+<html lang="en">
 
 <head>
   <meta charset="utf-8">
-  <title>Client</title>
+  <title>Rotating Nav</title>
   <!-- View-port Basics: http://mzl.la/VYREaP -->
   <!-- This meta tag is used for mobile device to display the page without any zooming,
        so how much the device is able to fit on the screen is what's shown initially. 
@@ -13,10 +13,10 @@
   <!-- Place favicon.ico in the root directory: mathiasbynens.be/notes/touch-icons -->
   <link rel="shortcut icon" href="favicon.ico" />
   <!--font-awesome link for icons-->
-  <link rel="stylesheet" media="screen" href="assets/vendor/font-awesome/css/all.min.css" >
+  <link rel="stylesheet" media="screen" href="assets/vendor/font-awesome/css/all.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <!-- Default style-sheet is for 'media' type screen (color computer display).  -->
-  <link rel="stylesheet" media="screen" href="assets/css/style.css" >
+  <link rel="stylesheet" media="screen" href="assets/css/style.css">
 </head>
 
 <body>
@@ -24,17 +24,56 @@
   <div class="container">
     <!--header section start-->
     <header>
-      
+      <div class="btn-div">
+        <div class="open">
+          <button class="open-btn btn">1</button>
+        </div>
+        <div class="close">
+          <button class="close-btn btn">2</button>
+        </div>
+      </div>
+      <nav>
+        <ul class="nav-items">
+          <li class="nav-items">
+            <a href="#FIXME" target="_self" class="nav-links home" title="Home">home</a>
+          </li>
+          <li class="nav-items">
+            <a href="#FIXME" target="_self" class="nav-links about" title="About">about</a>
+          </li>
+          <li class="nav-items">
+            <a href="#FIXME" target="_self" class="nav-links contact" title="Contact">contact</a>
+          </li>
+        </ul>
+      </nav>
     </header>
     <!--header section start-->
     <!--main section start-->
     <main>
-
+      <div class="wrapper">
+        <div class="article">
+          <h2 class="article-title">amazing article</h2>
+          <h3 class="article-author">florin pop</h3>
+          <p class="article-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Beatae impedit incidunt
+            velit asperiores, sed quidem rem blanditiis officia reprehenderit vero sapiente accusantium vitae placeat
+            distinctio cumque. Dolor corporis distinctio doloribus quod unde! Unde amet soluta quidem, cumque
+            praesentium consequuntur impedit perferendis recusandae dolor, provident necessitatibus rem quibusdam.
+            Veritatis, consequuntur consequatur!
+          </p>
+          <h4 class="article-about">nature</h4>
+          <figure>
+            <img src="./assets/image/1.jpg" alt="Man Walking in Forest">
+          </figure>
+          <p class="acrticle-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sequi officia nobis odio
+            repellat alias sunt reiciendis possimus temporibus ipsam architecto voluptatibus corporis quia ut, earum
+            provident ducimus quaerat ratione consequuntur?
+          </p>
+        </div>
+      </div>
     </main>
     <!--main section end-->
 
     <!--footer section start-->
-    <footer>      
+    <footer>
 
     </footer>
     <!--footer section end-->
@@ -43,4 +82,5 @@
   <!--container end-->
   <script src="assets/js/script.js"></script>
 </body>
+
 </html>
